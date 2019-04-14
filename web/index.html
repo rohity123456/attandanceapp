@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSP Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/newcss.css">
+        <link rel="stylesheet" href="css/commonCss.css">
+        <style>
+            .ga{
+                background-color: #00BCD4;
+            }
+            #ab img{
+                width: 150px;
+                height: 100px;
+                margin-top: 130px;
+                margin-left: 50px;
+            }
+            #abce img{
+                width: 200px;
+                height: 50px;
+                margin-left: 80px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row container ga">
+            <span id="ab"><img src="images/goeasy.gif"></span>
+            <span id="abce"><img src="images/coollogo_com-216511022.gif" id="abc"></span>
+        </div>
+        <script type="text/javascript">
+    setTimeout(function(){
+    document.getElementById('abc').style.display = 'block';
+    },4200);
+    setTimeout(function(){
+    location.replace("http://localhost:8080/AttendanceApp/login.jsp")
+    },8200);
+</script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Assignment 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #container{
+                width: 100%;
+                height:100%;
+                border:  1px solid black;
+            }
+            #leftform{
+                float: left;
+                margin-left: 150px;
+            }
+            #rightform{
+                float: right;
+                margin-right: 150px;
+            }
+            .lformgroup{
+                padding: 10px;
+            }
+            #rform{
+             
+            }
+            input {
+             width: 100%;
+             border-radius: 15px;
+             border: 3px solid  black;
+             }
+             .tt{
+                 font-size: 20px;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="leftform">
+                <span class="tt">LEFT FORM</span>
+                <form>
+                    <div class="lformgroup">
+                    <label for="username">Username:</label>
+                    <input required type="text" placeholder="Enter username" name="username"><br>
+                    </div>
+                    <div class="lformgroup">
+                    <label for="email">Email:</label>
+                    <input required type="email" placeholder="Email" name="email"><br>
+                    </div>
+                    <div class="lformgroup">
+                    <label for="password">Password:</label>
+                    <input required type="password" placeholder="Password" name="pass"><br><br>
+                    </div>
+                    <input required type="submit" value="submit" id="lsubmit">
+                </form>
+            </div>
+            <div id="rightform">
+                <span class="tt">RIGHT FORM</span>
+                <form id="rform">
+                    <div class="lformgroup">    
+                    <label for="firstname">Firstname:</label>
+                    <input required type="text" placeholder="First name" name="fname"><br>
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="lastname">Lastname:</label>
+                    <input required type="text" placeholder="Last name" name="lname"><br>
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="dob">DOB:</label>
+                    <input required type="date" placeholder="mm/dd/yyyy" name="dob">
+                    </div>
+                    <div class="lformgroup">
+                    <label for="city">City:</label>
+                    <input required type="text" placeholder="city name" name="city">                    
+                    </div>
+                    <div class="lformgroup">
+                    <label for="mobileNo">Mobile No:</label>
+                    <input required type="number" placeholder="Mobile No" name="mob">
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other"><br>
+                    </div>
+                    <div class="lformgroup">    
+                    <label for="Estatus">Employement Status:</label>
+                    <select name="e_status">
+                       <option>Employed</option>
+                       <option>Unemployed</option>
+                       <option>Student</option>
+                       <option>Other</option>
+                    </select>
+                    </div>
+                    <input required type="submit" value="submit" id="rsubmit">
+                </form>
+            </div>
+        </div>
+        <script>
+          document.getElementById('leftform').onsubmit=function(){
+         alert("Left Form Submitted");};
+         document.getElementById('rightform').onsubmit=function(){
+         alert("Right Form Submitted");};
+        </script>
+    </body>
+</html>

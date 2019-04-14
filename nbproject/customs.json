@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "integrity": {
+            "context": "link"
+        },
+        "value": {
+            "context": "select"
+        }
+    }
+}

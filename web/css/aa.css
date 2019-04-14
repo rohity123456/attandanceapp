@@ -1,0 +1,120 @@
+html,body{
+     overflow: auto;
+       height: 100%;
+}
+body{
+    background-color: black;
+}
+#container
+{
+    border: 1px solid black;
+    margin: 50px auto;
+    height: 500px;
+    width: 100%;
+     padding: 0 !important;
+    max-width: 300px;
+}
+#top{
+    background-color: #00BCD4;
+    height: 15%;
+    border: 1px solid blue;
+   }
+#bar{
+    float: left;
+    margin-top: 7%;
+    font-size: 20px;
+}
+div#scrollmenu {
+  margin-top: 35px;
+  overflow: auto;
+  white-space: nowrap;
+}
+div#scrollmenu::-webkit-scrollbar { 
+    display: none; 
+}
+div#scrollmenu a {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+}
+
+div#scrollmenu a:hover {
+ color: #999999;
+}
+ 
+#user{
+        margin-left: 20px;
+        font-size: 50px; 
+        color: black;
+    }
+    #view{
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 50px;
+        color: black;
+    }
+    .sidenav {
+  height: 496.5px;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  margin-left: -16px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #00BCD4;
+  display: table;
+  transition: 0.3s;
+}
+#pro{
+    padding-left: -20px;
+    font-size: 45px;
+}
+
+.sidenav a:hover {
+  color: #CAF9FF;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#below{
+    background-color: #F1F1F1;
+    height: 85%;
+}
+.hove1{
+    color: white; 
+    font-size: 20px;
+}
+.hove{
+         padding-bottom: 15px;
+}
+.hove:hover{
+    background-color: #cccccc;
+        padding-bottom: 15px;
+}
+.hove1:hover{
+  color: #cccccc;
+}
+
